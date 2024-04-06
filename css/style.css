@@ -18,8 +18,8 @@
 
 * {
     box-sizing: border-box;
-  }
-  
+}
+
 :root {
     --color-light: #FFFFFF;
     --color-dark: #000000;
@@ -127,9 +127,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 15px;
 }
 
-
-
-
 div#map {
     padding-top: 20px;
 }
@@ -137,16 +134,22 @@ div#map {
 .container h3 {
     padding-top: 100px;
 }
-/* 
-.button__image {
-    width: 150px;
-    height: 40px;
-    border: var(--color-dark);
-    border-radius: 15px;
-    /* background-image: url('/img/rustore.png'); 
-    background-image: url('https://storage.dashamail.ru/files/127334/1c0eb26bb009b1e3a7de27bf04ed2_19094.png');
-    background-size: cover;
+
+.container button {
+    width: 230px;
+    height: 50px;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-size: 24px;
+    padding: 10px 50px 10px 50px;
     cursor: pointer;
-    background-color: var(--color-light);
+    border: 0;
 }
- */
+
+.container button:hover {
+    font-size: 22px;
+}
+
+.button__wrapper {
+    padding-top: 20px;
+}
