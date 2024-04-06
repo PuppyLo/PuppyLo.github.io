@@ -1,4 +1,9 @@
 @import url("/css/header.css");
+@import url("/css/card.css");
+@import url("/carousel/styles/styles.css");
+@import url("/css/form.css");
+@import url("/css/footer.css");
+
 
 @font-face {
     font-family: 'PT Sans';
@@ -153,4 +158,8 @@ div#map {
 
 .button__wrapper {
     padding-top: 20px;
+}
+
+.content{
+    padding: 200px;
 }
