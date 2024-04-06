@@ -1,0 +1,153 @@
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    background-color: var(--color-dark);
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.footer__body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;    
+    text-wrap: nowrap;
+    padding: 0;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.footer__list li {
+    margin: 0 0 0 20px;
+}
+
+.footer__link {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: var(--color-light);
+}
+
+.footer__logo {
+    flex: 0 0 160px;
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+
+}
+
+.footer__logo img {
+    max-width: 100%;
+    display: block;
+    height: 70px;
+}
+
+.footer__burger {
+    display: none;
+}
+
+
+@media (max-width:1100px) {
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    .footer__body {
+        height: 50px;
+    }
+
+    .footer__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+
+    .footer__burger span {
+        position: absolute;
+        background-color: var(--color-light);
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+
+    .footer__burger::before,
+    .footer__burger::after {
+        content: '';
+        background-color: var(--color-light);
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+
+    .footer__burger::before {
+        top: 0;
+    }
+
+    .footer__burger::after {
+        bottom: 0;
+    }
+
+    .footer__burger.active span {
+        transform: scale(0);
+    }
+
+    .footer__burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .footer__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .footer__menu {
+        position: fixed;
+        top: -150%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-light);
+        padding: 50px 10px 20px 10px;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+    }
+
+    .footer__menu.active {
+        top: 0;
+    }
+
+    .footer__list {
+        float: inline-end;
+        display: block;
+    }
+
+    .footer__list li {
+        margin: 0px 30px 10px 0px;
+    }
+}
