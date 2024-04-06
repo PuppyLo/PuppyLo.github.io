@@ -148,6 +148,7 @@ div#map {
 
 .container button:hover {
     font-size: 22px;
+    background-color: #333333;
 }
 
 .button__wrapper {
