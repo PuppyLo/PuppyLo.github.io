@@ -23,6 +23,7 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 :root {
@@ -136,10 +137,6 @@ div#map {
     padding-top: 20px;
 }
 
-.container h3 {
-    padding-top: 100px;
-}
-
 .container button {
     width: 230px;
     height: 50px;
@@ -160,6 +157,6 @@ div#map {
     padding-top: 20px;
 }
 
-.content{
-    padding: 200px;
+.title{
+    padding-top: 100px;
 }
