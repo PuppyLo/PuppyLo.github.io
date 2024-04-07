@@ -194,12 +194,37 @@
     }
 
     .footer__right {
-        flex: 0 0 60%;
         font-size: 12px;
+        align-items: center;
+        width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer__social {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .footer__about {
+        text-align: left;
     }
 
     .social_link_img {
         max-width: 100%;
         height: auto;
+    }
+
+    .footer__body {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__item_top {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
     }
 }
