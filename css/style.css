@@ -3,6 +3,8 @@
 @import url("/carousel/styles/styles.css");
 @import url("/css/form.css");
 @import url("/css/footer.css");
+@import url("/css/tabs.css");
+@import url("/slider/simple-adaptive-slider.min.css");
 
 
 @font-face {
@@ -157,10 +159,10 @@ div#map {
     padding-top: 20px;
 }
 
-.title{
+.title {
     padding-top: 100px;
 }
 
-.wrapper__content{
+.wrapper__content {
     margin-bottom: 25px;
 }

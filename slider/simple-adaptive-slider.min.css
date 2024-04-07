@@ -1,0 +1,124 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider__wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.slider__items {
+    display: flex;
+    transition: transform 0.5s ease;
+    align-items: center;
+}
+
+.transition-none {
+    transition: none;
+}
+
+.slider__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+
+}
+
+.slider__control {
+    width: 100px;
+    height: 50px;
+    display: none;
+    user-select: none;
+}
+
+.slider__control_show {
+    display: flex;
+    align-items: center;
+}
+
+
+.slider__control_prev {
+    left: 0;
+}
+
+.slider__control_next {
+    right: 0;
+}
+
+.slider__control::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_prev::before {
+    background-image: url("/img/slider_control_prev.svg");
+}
+
+.slider__control_next::before {
+    background-image: url("/img/slider_control_next.svg");
+
+}
+
+.slider__indicators {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 22px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0 auto;
+    list-style: none;
+    user-select: none;
+    width: 50%;
+}
+
+.slider__indicator {
+    flex: 0 1 auto;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    margin-left: 3px;
+    background-color: rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    border: 0.1px solid var(--color-dark);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider__indicator_active {
+    background-color: var(--color-dark);
+}
+
+.slider__arrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__content{
+    border-bottom: 2px solid var(--color-dark);
+    padding-bottom: 20px;
+}
+
+.slider__element{
+    display: flex;
+    margin-inline: 37px;
+}
+
+.slider__element_content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.slider__element_content h4{
+font-size: 28px;
+}
