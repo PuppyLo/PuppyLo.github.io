@@ -160,3 +160,7 @@ div#map {
 .title{
     padding-top: 100px;
 }
+
+.wrapper__content{
+    margin-bottom: 25px;
+}
