@@ -188,4 +188,12 @@
         color: var(--color-dark);
         font-size: 18px;
     }
+
+    .footer__logo{
+        flex: 0 0 80px;
+    }
+
+    .footer__right{
+        flex: 0 0 60%;
+    }
 }
