@@ -9,5 +9,7 @@ $(document).ready(function () {
     $('.footer__burger').click(function (event) {
         $('.footer__burger, .footer__menu').toggleClass('active');
         $('body').toggleClass('lock');
+        $('.header').toggleClass('index');
+
     });
 });
