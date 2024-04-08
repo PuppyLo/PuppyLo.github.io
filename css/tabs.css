@@ -12,7 +12,7 @@
 	flex-wrap: wrap;
 	list-style: none;
 	position: relative;
-    justify-content: space-evenly;
+	justify-content: space-around;
 	padding: 0;
 	font-size: 24px;
 }
