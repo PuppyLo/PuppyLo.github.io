@@ -116,6 +116,12 @@
     border-bottom: 2px solid var(--color-dark);
     padding-bottom: 20px;
 }
+.slider__element_right h4, p, ul{
+    text-align: end;
+}
+
+.slider__element_right .slider__element_content{
+align-items: flex-end;}
 
 .slider__element_content {
     display: flex;
