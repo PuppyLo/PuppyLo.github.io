@@ -24,6 +24,7 @@
 	<script defer rel="preconnect" src="/slider/simple-adaptive-slider.min.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
+			// инициализация слайдера
 			var slider = new SimpleAdaptiveSlider('.slider', {
 				autoplay: false,
 				interval: 5000,
@@ -31,6 +32,8 @@
 			});
 		});
 	</script>
+
+
 </head>
 
 
@@ -81,7 +84,6 @@
 			</p>
 
 			<div class="tabs">
-
 				<ul class="tabs__caption">
 					<li class="tabs__active">HQD</li>
 					<li>WAKA</li>
@@ -93,7 +95,6 @@
 					<li>inflave</li>
 
 				</ul>
-
 				<div class="tabs__content  tabs__active">
 					<!-- Разметка слайдера -->
 					<div class="slider">
@@ -128,6 +129,9 @@
 							</div>
 							<div class="slider__item">
 								<div style="height: 250px; background: #4caf50;"></div>
+							</div>
+							<div class="slider__item">
+								<div style="height: 250px; background: #162b17;"></div>
 							</div>
 						</div>
 					</div>
