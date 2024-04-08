@@ -103,20 +103,24 @@
     justify-content: space-between;
 }
 
-.slider__content {
+.slider__element_left {
+    display: flex;
+    margin-inline: 37px;
     border-bottom: 2px solid var(--color-dark);
     padding-bottom: 20px;
 }
-
-.slider__element {
+.slider__element_right {
     display: flex;
+    flex-direction: row-reverse;
     margin-inline: 37px;
+    border-bottom: 2px solid var(--color-dark);
+    padding-bottom: 20px;
 }
 
 .slider__element_content {
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
+    padding-inline: 25px;
 }
 
 .slider__element_content h4 {
