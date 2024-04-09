@@ -16,22 +16,7 @@
 	<title>Mona Tobacco</title>
 	<link rel="stylesheet" href="/css/style.css" />
 
-	<script defer rel="preconnect" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script defer rel="preconnect" src="/js/script.js"></script>
-	<script defer rel="preconnect" src="/carousel/js/main.js"></script>
-	<script defer rel="preconnect" src="/js/form.js"></script>
-	<script defer rel="preconnect" src="/js/tabs.js"></script>
-	<script defer rel="preconnect" src="/slider/simple-adaptive-slider.min.js"></script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			// инициализация слайдера
-			var slider = new SimpleAdaptiveSlider('.slider', {
-				autoplay: false,
-				interval: 5000,
-				swipe: true,
-			});
-		});
-	</script>
+
 
 
 </head>
@@ -283,8 +268,24 @@
 				всему миру. Наш бренд известен своим высоким качеством продукции, отличным обслуживанием и дружелюбной
 				атмосферой.</p>
 			<div class="button__wrapper">
-				<a href="/"><button>Подробнее</button></a>
+				<a href="#popup"><button>Подробнее</button></a>
 			</div>
+
+			<!-- POPUP -->
+			<div id="popup" class="popup">
+				<div class="popup__body">
+					<div class="popup__content">
+						<a href="" class="popup__close">X</a>
+						<div class="popup__title">uhguigurtb 858 85</div>
+						<div class="popup__text">
+							uignbint hiuhebunrn rtnbrtn brtn rn rbinb kjkb rt rbjntrnbrt njbntr ntbrn ekurtnbrtn rbuitn
+							brun btrn btnnbfdnbjsnbjndfsbndf snbjdfnbsnbjfndjbknsj bksndjbknjbknsdj fkbndjsfnbjkdnsbj
+							dsnbjsnbj
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- POPUP -->
 		</div>
 
 		<div class="container">
@@ -502,7 +503,23 @@
 		</div>
 	</footer>
 
+	<script defer rel="preconnect" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script defer rel="preconnect" src="/js/script.js"></script>
+	<script defer rel="preconnect" src="/carousel/js/main.js"></script>
+	<script defer rel="preconnect" src="/js/form.js"></script>
+	<script defer rel="preconnect" src="/js/tabs.js"></script>
 
+	<script defer rel="preconnect" src="/slider/simple-adaptive-slider.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// инициализация слайдера
+			var slider = new SimpleAdaptiveSlider('.slider', {
+				autoplay: false,
+				interval: 5000,
+				swipe: true,
+			});
+		});
+	</script>
 
 	<script defer rel="preconnect"
 		src="https://api-maps.yandex.ru/2.1/?apikey=1aa485ea-e0cb-4927-a650-7bf3f7a3ed14&lang=ru_RU"

@@ -5,6 +5,7 @@
 @import url("/css/footer.css");
 @import url("/css/tabs.css");
 @import url("/slider/simple-adaptive-slider.min.css");
+@import url("/css/popup.css");
 
 @font-face {
     font-family: 'PT Sans';
