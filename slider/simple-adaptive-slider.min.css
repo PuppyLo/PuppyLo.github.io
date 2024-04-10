@@ -104,31 +104,63 @@
 }
 
 .slider__element_left {
-    display: flex;
+    /* display: flex;
     margin-inline: 37px;
     border-bottom: 2px solid var(--color-dark);
     padding-bottom: 20px;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
 }
+
 .slider__element_right {
     display: flex;
     flex-direction: row-reverse;
     margin-inline: 37px;
     border-bottom: 2px solid var(--color-dark);
     padding-bottom: 20px;
+    flex-wrap: wrap;
+
 }
-.slider__element_right h4, p, ul{
+
+.slider__element_right img,
+.slider__element_left img {
+    width: 170px;
+    height: 215px;
+
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.slider__element_right,
+.slider__element_left h4 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.slider__element_right,
+.slider__element_left p {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.slider__element_right,
+.slider__element_left ul {
+    grid-area: 3 / 1 / 4 / 3;
     text-align: end;
 }
 
-.slider__element_right .slider__element_content{
-align-items: flex-end;}
+/* .slider__element_right .slider__element_content {
+    align-items: flex-end;
+} */
 
-.slider__element_content {
+/* .slider__element_content {
     display: flex;
     flex-direction: column;
     padding-inline: 25px;
-}
-
+} */
+/* 
 .slider__element_content h4 {
     font-size: 58px;
 }
@@ -137,14 +169,39 @@ align-items: flex-end;}
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px 50px;
-    text-wrap: nowrap;
     padding: 10px 0 0 20px;
     position: relative;
     justify-items: start;
-    width: max-content;
+    width: 100%;
 }
 
-.slider__element_content_info li{
+.slider__element_content_info li {
     list-style-type: disc;
     text-indent: -5px;
-}   
+} */
+
+@media (max-width:560px) {
+
+    .slider__element_left {
+        margin: 0;
+    }
+
+    .slider__element_left img {
+        width: 90px;
+        height: 100px;
+    }
+
+    .slider__element_left h4 {
+        font-size: 28px;
+    }
+
+    .slider__element_content p {
+        font-size: 12px;
+    }
+
+    .slider__element_content_info {
+        width: 100%;
+
+    }
+
+}

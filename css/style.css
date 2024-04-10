@@ -167,3 +167,9 @@ div#map {
 .wrapper__content {
     margin-bottom: 25px;
 }
+
+@media (max-width:560px){
+    h3{
+        font-size: 48px;
+    }
+}
