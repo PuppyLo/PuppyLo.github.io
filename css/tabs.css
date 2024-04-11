@@ -34,7 +34,7 @@
 
 .tabs__caption li:not(.tabs__active) {
 	cursor: pointer;
-	transition: all 0.3s ease 0s;
+	transition: var(--transition);
 	opacity: 0.5;
 }
 

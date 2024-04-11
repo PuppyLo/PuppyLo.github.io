@@ -13,11 +13,18 @@
 	<meta name="application-name" content="Mona Tobacco">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
+	
 	<title>Mona Tobacco</title>
+
 	<link rel="stylesheet" href="/css/style.css" />
-
-
-
+	<link rel="stylesheet" href="/css/header.css" />
+	<link rel="stylesheet" href="/css/card.css" />
+	<link rel="stylesheet" href="/carousel/styles/styles.css" />
+	<link rel="stylesheet" href="/css/form.css" />
+	<link rel="stylesheet" href="/css/footer.css" />
+	<link rel="stylesheet" href="/css/tabs.css" />
+	<link rel="stylesheet" href="/slider/simple-adaptive-slider.min.css" />
+	<link rel="stylesheet" href="/css/popup.css" />
 
 </head>
 
@@ -264,14 +271,14 @@
 				всему миру. Наш бренд известен своим высоким качеством продукции, отличным обслуживанием и дружелюбной
 				атмосферой.</p>
 			<div class="button__wrapper">
-				<a href="#popup"><button>Подробнее</button></a>
+				<a href="#popup" class="popup-link"><button>Подробнее</button></a>
 			</div>
 
 			<!-- POPUP -->
 			<div id="popup" class="popup">
 				<div class="popup__body">
 					<div class="popup__content">
-						<a href="" class="popup__close">X</a>
+						<a href="#header" class="popup__close close-popup">X</a>
 						<div class="popup__title">uhguigurtb 858 85</div>
 						<div class="popup__text">
 							uignbint hiuhebunrn rtnbrtn brtn rn rbinb kjkb rt rbjntrnbrt njbntr ntbrn ekurtnbrtn rbuitn
@@ -499,13 +506,6 @@
 		</div>
 	</footer>
 
-	<script defer rel="preconnect" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script defer rel="preconnect" src="/js/script.js"></script>
-	<script defer rel="preconnect" src="/carousel/js/main.js"></script>
-	<script defer rel="preconnect" src="/js/form.js"></script>
-	<script defer rel="preconnect" src="/js/tabs.js"></script>
-
-	<script defer rel="preconnect" src="/slider/simple-adaptive-slider.min.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 			// инициализация слайдера
@@ -517,9 +517,23 @@
 		});
 	</script>
 
-	<script defer rel="preconnect"
+	<script defer rel="preconnect" src="/js/1jquery.min.js"></script>
+	<script defer rel="preconnect" src="/js/header_burger_menu.js"></script>
+	<script defer rel="preconnect" src="/carousel/js/main.js"></script>
+	<script defer rel="preconnect" src="/js/form.js"></script>
+	<script defer rel="preconnect" src="/js/tabs.js"></script>
+	<script defer rel="preconnect" src="/js/popup.js"></script>
+	<script defer rel="preconnect" src="/slider/simple-adaptive-slider.min.js"></script>
+
+
+
+	<!-- <script defer rel="preconnect"
 		src="https://api-maps.yandex.ru/2.1/?apikey=1aa485ea-e0cb-4927-a650-7bf3f7a3ed14&lang=ru_RU"
-		type="text/javascript"></script>
+		type="text/javascript"></script> -->
+
+	<script defer rel="preconnect"
+		src="//api-maps.yandex.ru/2.1/?apikey=47916f02-89f0-4839-8f17-8f83201289ca&lang=ru_RU"></script>
+
 	<script defer rel="preconnect" src="/js/placemark.js" type="text/javascript"></script>
 
 </body>
