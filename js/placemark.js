@@ -1,4 +1,3 @@
-
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [55.711991, 37.678515],

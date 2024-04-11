@@ -13,8 +13,10 @@
 	<meta name="application-name" content="Mona Tobacco">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
-	
+
 	<title>Mona Tobacco</title>
+	<meta name="description" content="Табачная сеть Mona Tobacoo">
+
 
 	<link rel="stylesheet" href="/css/style.css" />
 	<link rel="stylesheet" href="/css/header.css" />
@@ -95,7 +97,7 @@
 								<div class="slider__item">
 									<div class="slider__content">
 										<div class="slider__element_left">
-											<img src="/img/sliderItems/bar 1.png" alt="">
+											<img src="/img/sliderItems/bar 1.png" alt="" loading="lazy">
 											<h4>Cuvie Bar</h4>
 											<p>HQD Cuvie Bar позволяет пользователям вейпов наслаждаться более
 												чистым и
@@ -109,7 +111,7 @@
 											</ul>
 										</div>
 										<div class="slider__element_right">
-											<img src="/img/sliderItems/bar 1.png" alt="">
+											<img src="/img/sliderItems/bar 1.png" alt="" loading="lazy">
 											<h4>Titan</h4>
 											<p>HQD Titan – это идеальное решение для пользователей вейпов, которые
 												хотят получить максимальное количество пара. Он обладает огромной
@@ -229,10 +231,10 @@
 				<ul class="cards">
 					<li>
 						<div class="card">
-							<img src="img/test.jpg" class="card__image" alt="" />
+							<img src="img/test.jpg" class="card__image" alt="" loading="lazy" />
 							<div class="card__overlay">
 								<div class="card__header">
-									<img class="card__thumb" src="ico/mstile-144x144.png" alt="" />
+									<img class="card__thumb" src="ico/mstile-144x144.png" alt="" loading="lazy" />
 									<div class="card__header-text">
 										<h3 class="card__title">Мобильное приложение</h3>
 									</div>
@@ -245,11 +247,11 @@
 					</li>
 					<li>
 						<div class="card">
-							<img src="img/test.jpg" class="card__image" alt="" />
+							<img src="img/test.jpg" class="card__image" alt="" loading="lazy" />
 							<div class="card__overlay">
 								<div class="card__header">
 									<img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png"
-										referrerpolicy="no-referrer" alt="" />
+										referrerpolicy="no-referrer" alt="" loading="lazy" />
 									<div class="card__header-text">
 										<h3 class="card__title">виртуальная карта</h3>
 									</div>
@@ -323,7 +325,7 @@
 								<article>
 									<picture>
 										<source media="(min-width: 768px)" srcset="carousel/img/2.jpg">
-										<img src="carousel/img/2.jpg" alt="sample-one.jpeg">
+										<img src="carousel/img/2.jpg" alt="sample-one.jpeg" loading="lazy">
 									</picture>
 									<h4>Sample title only</h4>
 									<article class="short-description">
@@ -339,7 +341,7 @@
 								<article>
 									<picture>
 										<source media="(min-width: 768px)" srcset="carousel/img/3.jpg">
-										<img src="carousel/img/3.jpg" alt="sample-one.jpeg">
+										<img src="carousel/img/3.jpg" alt="sample-one.jpeg" loading="lazy">
 									</picture>
 									<h4>Sample title only</h4>
 									<article class="short-description">
@@ -355,7 +357,7 @@
 								<article>
 									<picture>
 										<source media="(min-width: 768px)" srcset="carousel/img/9.jpg">
-										<img src="carousel/img/9.jpg" alt="sample-one.jpeg">
+										<img src="carousel/img/9.jpg" alt="sample-one.jpeg" loading="lazy">
 									</picture>
 									<h4>Sample title only</h4>
 									<article class="short-description">
@@ -371,7 +373,7 @@
 								<article>
 									<picture>
 										<source media="(min-width: 768px)" srcset="carousel/img/5.jpg">
-										<img src="carousel/img/5.jpg" alt="sample-one.jpeg">
+										<img src="carousel/img/5.jpg" alt="sample-one.jpeg" loading="lazy">
 									</picture>
 									<h4>Sample title only</h4>
 									<article class="short-description">
@@ -387,7 +389,7 @@
 								<article>
 									<picture>
 										<source media="(min-width: 768px)" srcset="carousel/img/6.jpg">
-										<img src="carousel/img/6.jpg" alt="sample-one.jpeg">
+										<img src="carousel/img/6.jpg" alt="sample-one.jpeg" loading="lazy">
 									</picture>
 									<h4>Sample title only</h4>
 									<article class="short-description">
@@ -403,7 +405,7 @@
 								<article>
 									<picture>
 										<source media="(min-width: 768px)" srcset="carousel/img/7.jpg">
-										<img src="carousel/img/7.jpg" alt="sample-one.jpeg">
+										<img src="carousel/img/7.jpg" alt="sample-one.jpeg" loading="lazy">
 									</picture>
 									<h4>Sample title only</h4>
 									<article class="short-description">
@@ -517,7 +519,7 @@
 		});
 	</script>
 
-	<script defer rel="preconnect" src="/js/1jquery.min.js"></script>
+	<script defer rel="preconnect" src="/js/jquery.js"></script>
 	<script defer rel="preconnect" src="/js/header_burger_menu.js"></script>
 	<script defer rel="preconnect" src="/carousel/js/main.js"></script>
 	<script defer rel="preconnect" src="/js/form.js"></script>
@@ -531,10 +533,9 @@
 		src="https://api-maps.yandex.ru/2.1/?apikey=1aa485ea-e0cb-4927-a650-7bf3f7a3ed14&lang=ru_RU"
 		type="text/javascript"></script> -->
 
-	<script defer rel="preconnect"
-		src="//api-maps.yandex.ru/2.1/?apikey=47916f02-89f0-4839-8f17-8f83201289ca&lang=ru_RU"></script>
+	<script rel="preload" src="https://api-maps.yandex.ru/2.1/?apikey=47916f02-89f0-4839-8f17-8f83201289ca&lang=ru_RU"></script>
 
-	<script defer rel="preconnect" src="/js/placemark.js" type="text/javascript"></script>
+	<script async rel="preload" src="/js/placemark.js" type="text/javascript"></script>
 
 </body>
 
