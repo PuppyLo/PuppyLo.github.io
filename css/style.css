@@ -112,10 +112,6 @@ p {
     border-radius: 15px;
 }
 
-div#map {
-    padding-top: 20px;
-}
-
 .container button {
     width: 230px;
     height: 50px;
@@ -130,6 +126,7 @@ div#map {
 .container button:hover {
     font-size: 22px;
     background-color: #333333;
+    transition: var(--transition);
 }
 
 .button__wrapper {
