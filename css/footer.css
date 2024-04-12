@@ -81,7 +81,8 @@
     line-height: 1;
     text-align: right;
 }
-.footer__about a{
+
+.footer__about a {
     color: var(--color-light-gray);
     opacity: 0.4;
 }
@@ -94,12 +95,12 @@
 
     }
 
-    .footer__right{
+    .footer__right {
         align-items: center;
         gap: 10px;
     }
 
-    .footer__about{
+    .footer__about {
         text-align: start;
     }
 }

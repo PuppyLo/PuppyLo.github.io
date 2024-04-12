@@ -86,7 +86,7 @@
         width: 100%;
         height: 2px;
         top: 9px;
-        transition:var(--transition);
+        transition: var(--transition);
     }
 
     .header__burger::before,
