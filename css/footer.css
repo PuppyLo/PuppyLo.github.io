@@ -81,7 +81,10 @@
     line-height: 1;
     text-align: right;
 }
-
+.footer__about a{
+    color: var(--color-light-gray);
+    opacity: 0.4;
+}
 
 @media (max-width:560px) {
 
