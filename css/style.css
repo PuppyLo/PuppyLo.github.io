@@ -90,6 +90,10 @@ p {
     margin: 0;
 }
 
+div#map {
+    padding-top: 20px;
+}
+
 [class*="ground-pane"] {
     -ms-filter: grayscale(1);
     -webkit-filter: grayscale(1);
