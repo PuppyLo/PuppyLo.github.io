@@ -9,8 +9,8 @@
     overflow: hidden;
     font-size: 0;
     letter-spacing: 0;
-    background: #f9f9f9;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 10px 18px rgba(0, 0, 0, 0.2);
+    /* background: #f9f9f9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 10px 18px rgba(0, 0, 0, 0.2); */
 }
 
 .form-at * {
@@ -22,9 +22,7 @@
 .no-validate-input-at {
     width: 100%;
     position: relative;
-    background-color: #fff;
-    border: 2px solid #BFE2FF;
-    border-radius: 2px;
+    background-color: var(--color-light-gray);
     margin-bottom: 20px;
 }
 
