@@ -3,13 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, shrink-to-fit=no" />
 
 	<!--  -->
 	<link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-touch-icon.png">
-	<link rel="icon" sizes="180x180" href="/ico/android-chrome-192x192.png">	
+	<link rel="icon" sizes="180x180" href="/ico/android-chrome-192x192.png">
 	<link rel="icon" sizes="180x180" href="/ico/android-chrome-512x512.png">
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="manifest" href="/manifest.json">
@@ -1096,6 +1097,23 @@
 		});
 	</script>
 
+	<!--  -->
+	<script>
+		if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function () {
+				navigator.serviceWorker.register('/sw.js').then(
+					function (registration) {
+						// Registration was successful
+						console.log('ServiceWorker registration successful with scope: ', registration.scope);
+					},
+					function (err) {
+						// registration failed :(
+						console.log('ServiceWorker registration failed: ', err);
+					});
+			});
+		}
+	</script>
+	<!--  -->
 	<script defer rel="preconnect" src="/js/jquery.js" type="text/javascript" as="script"></script>
 	<script defer rel="preconnect" src="/js/header_burger_menu.js" type="text/javascript" as="script"></script>
 	<script defer rel="preconnect" src="/carousel/js/main.js" type="text/javascript" as="script"></script>
