@@ -1,11 +1,10 @@
 {
   "name": "Mona Tobacco",
   "short_name": "Mona Tobacco",
-  "description": "Табачная сеть «Mona Tobacco» ",
-  "start_url": "https://monatobacco.netlify.app",
+  "description": "Табачная сеть «Mona Tobacco»",
+  "start_url": "/",
   "lang": "ru-RU",
   "display": "standalone",
-  "orientation": "portrait",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "icons": [
@@ -24,6 +23,23 @@
       "sizes": "196x196",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "/ico/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
+  ],
+  "id": "pwa",
+  "orientation": "portrait",
+  "display_override": [
+    "standalone",
+    "window-controls-overlay"
+  ],
+  "categories": [
+    "business",
+    "finance",
+    "magazines"
   ]
 }
