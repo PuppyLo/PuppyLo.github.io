@@ -1,0 +1,14 @@
+{
+    "name": "Mona Tobacco",
+    "description": "Табачная сеть «Mona Tobacco» ",
+    "start_url": "/",
+    "lang": "ru",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "/ico/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
