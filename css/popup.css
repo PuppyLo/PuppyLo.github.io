@@ -35,7 +35,7 @@
 }
 
 .popup__content h4 {
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .popup__content h5 {
@@ -52,30 +52,64 @@
 }
 
 .popup__text {
-    font-size: 24px;
-}
-
-.franchising__one_text {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
     color: #4c4c4c;
     font-size: 24px;
-    font-weight: 500;
-    line-height: 160%;
-    letter-spacing: 0.03em;
     text-align: justify;
 }
 
-.franchising__one_text-two {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    height: 48%;
+.popup__text_left,
+.popup__text_right {
+    width: 50%;
+    padding-inline: 20px;
 }
 
-.franchising__one_text-two+.franchising__one_text-two {
-    margin-left: 4%;
+@media (max-width:900px) {
+    .popup__text {
+        font-size: 24px;
+    }
+
+    .popup__text_left,
+    .popup__text_right {
+        padding-inline: 10px;
+    }
+
+    .popup__content {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    .popup__text {
+        font-size: 18px;
+        flex-direction: column;
+    }
+
+    .popup__text_left,
+    .popup__text_right {
+        width: 100%;
+    }
+
+    .popup__content {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .popup__content h4 {
+        padding-inline: 10px;
+    }
+}
+
+@media (max-width:370px) {
+    .popup__content {
+        padding: 10px 0;
+    }
+
+    .popup__text_politconf h5 {
+        font-size: 24px;
+    }
 }
