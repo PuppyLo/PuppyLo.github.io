@@ -5,6 +5,7 @@
   "start_url": "https://monatobacco.netlify.app",
   "lang": "ru-RU",
   "display": "standalone",
+  "orientation": "portrait",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "icons": [
@@ -17,6 +18,12 @@
       "src": "/ico/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/ico/android-chrome-192x192.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
