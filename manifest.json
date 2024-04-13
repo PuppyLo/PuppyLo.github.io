@@ -1,7 +1,7 @@
 {
     "name": "Mona Tobacco",
     "description": "Табачная сеть «Mona Tobacco» ",
-    "start_url": "https://monatobacco.netlify.app/",
+    "start_url": "https://monatobacco.netlify.app",
     "lang": "ru",
     "display": "standalone",
     "icons": [
