@@ -59,11 +59,11 @@
 }
 
 .slider__control_prev::before {
-    background-image: url("/img/slider_control_prev.svg");
+    background-image: url("/slider/slider_control_prev.svg");
 }
 
 .slider__control_next::before {
-    background-image: url("/img/slider_control_next.svg");
+    background-image: url("/slider/slider_control_next.svg");
 
 }
 

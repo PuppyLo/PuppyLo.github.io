@@ -34,6 +34,8 @@
   background-color: var(--color-light);
   transform: translateY(100%);
   transition: .2s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover .card__overlay {
@@ -83,8 +85,37 @@
   color: var(--color-dark);
   display: -webkit-box;
   overflow: hidden;
+  text-align: justify;
 }
 
 .card h3 {
   padding-top: 25px;
 }
+
+.card__overlay a {
+  margin: 0 auto;
+  color: var(--color-dark);
+  display: flex;
+  gap: 10px;
+  font-weight: bold;
+  align-items: center;
+}
+.card__overlay a img{
+  height: 60px;
+  max-width: 200px;
+}
+
+.card__overlay a:hover {
+  color: var(--color-dark-gray);
+  transition: var(--transition);
+  scale: 0.9;
+}
+
+
+/* .card__bonus_qr {
+  width: 50px;
+}
+
+.card__overlay a p {
+  text-align: start;
+} */
