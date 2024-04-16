@@ -8,7 +8,6 @@
 .slider__wrapper {
     position: relative;
     overflow: hidden;
-    background-color: #eee;
 }
 
 .slider__items {
