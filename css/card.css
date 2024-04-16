@@ -93,13 +93,14 @@
 }
 
 .card__overlay a {
-  margin: 0 auto;
   color: var(--color-dark);
   display: flex;
   gap: 10px;
   font-weight: bold;
   align-items: center;
+  justify-content: center;
 }
+
 .card__overlay a img{
   height: 60px;
   max-width: 200px;
@@ -110,12 +111,3 @@
   transition: var(--transition);
   scale: 0.9;
 }
-
-
-/* .card__bonus_qr {
-  width: 50px;
-}
-
-.card__overlay a p {
-  text-align: start;
-} */
