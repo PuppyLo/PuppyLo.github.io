@@ -38,7 +38,10 @@
     overflow: hidden;
     position: relative;
     z-index: 3;
+}
 
+.footer__logo img:hover{
+    scale: 0.9;
 }
 
 .footer__right {
@@ -52,17 +55,17 @@
     display: inline-flex;
 }
 
-.social_link {
+.footer__social a {
     overflow: hidden;
     position: relative;
     z-index: 3;
     padding-inline-start: 15px;
 }
-.social_link:hover{
+.footer__social a:hover{
     scale: 0.9;;
 }
 
-.social_link_img {
+.footer__social a img {
     width: 100%;
     height: 30px;
 }
