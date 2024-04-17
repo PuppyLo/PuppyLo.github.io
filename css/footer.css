@@ -30,16 +30,15 @@
     color: var(--color-dark-gray);
 }
 
+.footer__link:hover {
+    color: var(--color-light-gray);
+}
+
 .footer__logo {
     overflow: hidden;
     position: relative;
     z-index: 3;
 
-}
-
-
-.footer__burger {
-    display: none;
 }
 
 .footer__right {
@@ -59,6 +58,9 @@
     z-index: 3;
     padding-inline-start: 15px;
 }
+.social_link:hover{
+    scale: 0.9;;
+}
 
 .social_link_img {
     width: 100%;
@@ -75,6 +77,10 @@
 .footer__about a {
     color: var(--color-light-gray);
     opacity: 0.4;
+}
+
+.footer__about a:hover {
+    opacity: 0.6;
 }
 
 @media (max-width:560px) {
