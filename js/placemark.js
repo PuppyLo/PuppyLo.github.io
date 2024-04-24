@@ -93,20 +93,6 @@ ymaps.ready(function () {
         hintLayout: HintLayout
     }));
 
-    myMap.geoObjects.add(new ymaps.Placemark([55.720812, 37.609357], {
-        object: 'Mona Tobacco на Шаболовской',
-        balloonContent:
-            `<strong>Mona Tobacco</strong></br>
-            <strong>улица Шаболовка, 24</strong></br>
-            <strong>Режим работы: </strong>понедельник - суббота 09:00 - 21:00, воскресенье выходной</br>
-            <a href="https://yandex.ru/maps/?rtext=~55.720812, 37.609357" target="_blank">Построить маршрут в Яндекс.Карты</a>`
-    }, {
-        iconLayout: 'default#image',
-        iconImageHref: 'https://upload.wikimedia.org/wikipedia/commons/5/58/Simpleicons_Places_placeholder-tool.svg',
-        iconImageSize: [35, 35],
-        hintLayout: HintLayout
-    }));
-
     myMap.geoObjects.add(new ymaps.Placemark([55.787715, 37.616045], {
         object: 'Mona Tobacco на Достоевской',
         balloonContent:
