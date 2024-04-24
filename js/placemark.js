@@ -51,10 +51,10 @@ ymaps.ready(function () {
         }));
 
     myMap.geoObjects.add(new ymaps.Placemark([55.622014, 37.609883], {
-        object: `<span itemprop="name">Mona Tobacco на Южной</span>`,
+        object: 'Mona Tobacco на Южной',
         balloonContent:
             `<strong>Mona Tobacco</strong></br>
-            <span itemprop="streetAddress"><strong>Кировоградская улица, 9к4</strong></span></br>
+            <strong>Кировоградская улица, 9к4</strong></br>
             <strong>Режим работы: </strong>понедельник - воскресенье 10:00 - 22:00</br>
             <a href="https://yandex.ru/maps/?rtext=~55.622014, 37.609883" target="_blank">Построить маршрут в Яндекс.Карты</a>`
     }, {
