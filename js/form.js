@@ -13,13 +13,15 @@ $(function() {
             }
             // Отправка формы        
             if (check == true) {
-                $.post("/js/form.php", $frm.find(".form-at select, .form-at input, .form-at textarea").serialize(),
+                $.post("https://monatobacco.ru/js/form.php", $frm.find(".form-at select, .form-at input, .form-at textarea").serialize(),
                     function(data){
                         if(data.frm_check == 'error'){ 
                             $frm.find(".result-at").html("<div class='error-at'>Ошибка: " + data.msg + "</div>");                    
                             } else {
-                            $frm.find(".result-at").html("<div class='success-at'>Ваше сообщение отправлено!</div>"); 
-                            $frm.find(".form-at").fadeOut(500);
+                                $frm.find(".result-at").html("<div class='success-at'>Ваше сообщение отправлено!</div>"); 
+                                setTimeout(function() {
+                                $frm.find(".result-at").fadeOut(500);
+                            }, 2000);                            
                             $frm.find(".input-at").val("");            
                         }
                     }, "json");

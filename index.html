@@ -1193,7 +1193,7 @@
 							<div class="card-testimonial">
 								<article>
 									<picture>
-										<img src="/carousel/imgbr /usko.svg" alt="sample-one.jpeg" loading="lazy" />
+										<img src="/carousel/img/brusko.svg" alt="sample-one.jpeg" loading="lazy" />
 									</picture>
 								</article>
 							</div>
@@ -1301,6 +1301,7 @@
 									</picture>
 								</article>
 							</div>
+
 							<div class="card-testimonial">
 								<article>
 									<picture>
@@ -2030,36 +2031,7 @@
 		</div>
 	</footer>
 
-
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			// инициализация слайдера
-			var slider = new SimpleAdaptiveSlider('.slider', {
-				autoplay: false,
-				interval: 5000,
-				swipe: true,
-			});
-		});
-	</script>
-
-	<!--  -->
-	<script>
-		if ('serviceWorker' in navigator) {
-			window.addEventListener('load', function () {
-				navigator.serviceWorker.register('/sw.js').then(
-					function (registration) {
-						// Registration was successful
-						console.log('ServiceWorker registration successful with scope: ', registration.scope);
-					},
-					function (err) {
-						// registration failed :(
-						console.log('ServiceWorker registration failed: ', err);
-					});
-			});
-		}
-	</script>
-	<!--  -->
-	<script defer="defer" rel="preconnect" src="/js/jquery.js" type="text/javascript" as="script"></script>
+	<script defer="defer" rel="preconnect" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 	<script defer="defer" rel="preconnect" src="/js/header_burger_menu.js" type="text/javascript" as="script"></script>
 	<script defer="defer" rel="preconnect" src="/carousel/js/main.js" type="text/javascript" as="script"></script>
 	<script defer="defer" rel="preconnect" src="/js/form.js" type="text/javascript" as="script"></script>

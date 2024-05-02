@@ -16,7 +16,7 @@
         }     
         
         if ($return_arr["frm_check"] != 'error') {            
-            $subject = "From my-site.ru: $subject";
+            $subject = "From MonaTobacco.ru: $subject";
 $message = "Сообщение от " .$name. "\n
 Контакт: " .$email. "\n        
 Сообщение:\n" .$message;
