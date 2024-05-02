@@ -13,7 +13,7 @@ $(function() {
             }
             // Отправка формы        
             if (check == true) {
-                $.post("http://127.0.0.1:5501/js/send.php", $frm.find(".form-at select, .form-at input, .form-at textarea").serialize(),
+                $.post("/js/form.php", $frm.find(".form-at select, .form-at input, .form-at textarea").serialize(),
                     function(data){
                         if(data.frm_check == 'error'){ 
                             $frm.find(".result-at").html("<div class='error-at'>Ошибка: " + data.msg + "</div>");                    
